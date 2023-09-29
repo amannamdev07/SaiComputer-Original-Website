@@ -1,0 +1,170 @@
+@media screen and (max-width : 1020px) {
+
+    /* Header Section */
+    /* .middle_section_header .address,
+    .middle_section_header .clock,
+    .middle_section_header .mail {
+        display: none;
+    } */
+
+    .middle_section_header
+    {
+        flex-direction: column;
+    }
+
+    .middle_section_header .address,
+    .middle_section_header .clock{
+        display: none;
+    }
+
+    .bottom_section_header
+    {
+        flex-direction: column;
+    }
+
+    /* About Section */
+    .about_section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about_left_div {
+        width: 50%;
+        margin: auto;
+    }
+
+    .about_right_div {
+        width: 80%;
+        margin: auto;
+    }
+
+    /* Products Section */
+    .product_section {
+        height: 40vh;
+    }
+
+
+    /* Contact Section */
+    .contact_section {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    /* Footer Section */
+    .footer_section {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+
+}
+
+@media screen and (max-width : 720px) {
+    html {
+        font-size: 58%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.1rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    /* Header Section */
+    .top_section_header {
+        flex-direction: column;
+    }
+
+    .bottom_section_header nav {
+        padding: 1rem;
+    }
+
+    .bottom_section_header
+    {
+        flex-direction: column;
+    }
+
+    /* Hero Section */
+    .hero_section {
+        width: 100%;
+        height: 40vh;
+    }
+
+    /* About Section */
+    .about_section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about_left_div,
+    .about_right_div {
+        width: 100%;
+        margin: auto;
+    }
+
+    /* Products Section */
+    .product_section {
+        height: 50vh;
+    }
+
+    .category_cards_section {
+        overflow-x: scroll;
+        min-width: 100%;
+        min-height: 30%;
+    }
+
+    .category_cards_section::-webkit-scrollbar {
+        display: none;
+    }
+
+    .cards {
+        min-width: 60%;
+        min-height: 30%;
+    }
+
+    /* Contact Form */
+    .contact_form input,
+    .contact_form textarea {
+        font-size: 1.2rem;
+    }
+
+
+    /* Contact Section */
+    .contact_section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Footer Section */
+    .footer_section {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width : 520px) {
+
+    /* Products Section */
+
+    .cards {
+        margin: auto;
+        max-width: 0%;
+    }
+
+}

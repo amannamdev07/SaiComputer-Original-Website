@@ -1,0 +1,423 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Libre+Baskerville&family=Nanum+Gothic:wght@700;800&family=Poppins&family=Roboto+Slab:wght@400;600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* Root */
+:root
+{
+    --dark_blue : #152545;
+    --sky_blue : #43c3ea;
+    --white : #ffffff;
+}
+
+h1, h2, h3, h4, h5
+{
+    font-family: 'Roboto Slab', serif;
+}
+
+p
+{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+a
+{
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1
+{
+    font-size: 2.9rem;
+}
+
+h2
+{
+    font-size: 2.6rem;
+}
+
+h3
+{
+    font-size: 2.2rem;
+}
+
+h4
+{
+    font-size: 1.7rem;
+}
+
+p
+{
+    font-size: 1.85rem;
+}
+
+.heading
+{
+    margin: .5rem;
+    text-transform: capitalize;
+    text-align: center;
+    padding: .5rem;
+    color: var(--dark_blue);
+}
+
+.flex
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.white
+{
+    color: var(--white);
+}
+
+.center
+{
+    text-align: center;
+}
+
+.flex_column
+{
+    display: flex;
+    flex-direction: column;
+    padding: .7rem;  
+}
+
+.bold
+{
+    font-weight: 600;
+}
+
+ul
+{
+    display: flex;
+}
+
+li
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.round_shape
+{
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px rgb(161, 161, 161);
+    border: 2px solid rgb(197, 195, 195) ;
+}
+
+
+/* Header Section */
+.header 
+{
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.top_section_header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--sky_blue);
+    padding: 1rem;
+    color: var(--white);
+    font-size: 1.9rem;
+    text-transform: capitalize;
+}
+
+.social_icons
+{
+    display: flex;
+    gap: 2rem;
+}
+
+.social_icons i:hover
+{
+    color: var(--dark_blue);
+    cursor: pointer;
+}
+
+.middle_section_header
+{
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.bottom_section_header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--dark_blue);
+    height: 7vh;
+    color: var(--white);
+}
+
+.bottom_section_header ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.bottom_section_header ul li a 
+{
+    color: var(--white);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.bottom_section_header ul li a:hover
+{
+    transition: all 0.2s;
+    color: var(--sky_blue);
+}
+
+.contact_no a
+{
+    font-size: 1.7rem;
+}
+
+.contact_no a:hover
+{
+    transition: all 0.2s;
+    color: var(--sky_blue);
+}
+
+.mail h4 li a
+{
+    color: black;
+}
+
+/* Header Section */
+.hero_section
+{
+    width: 100%;
+    height: 80vh;
+}
+
+.res_img
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* About Section */
+.about_section
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about_left_div
+{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: .8rem;
+    width: 100%;
+}
+
+.about_images_div
+{
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.button_div
+{
+    margin-top: .9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.res_btns
+{
+    background-color: var(--sky_blue);
+    outline: none;
+    border: none;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.res_btns:hover
+{
+    background-color: var(--dark_blue);
+}
+
+.about_right_div
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+    color: var(--dark_blue);
+}
+
+
+/* Products Section */
+.product_section
+{
+    width: 100%;
+    height: 70vh;
+    background-color: var(--dark_blue);
+    color: var(--sky_blue);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 3.567rem;
+}
+
+
+.category_cards_section
+{
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    display: flex;
+    gap: 5rem;
+}
+
+.category_cards_section::-webkit-scrollbar
+{
+    display: none;
+}
+
+.cards
+{
+    min-width: 25%;
+    padding: 1.5rem;
+    background-color: var(--white);
+    transition: all 0.5s;
+}
+
+.imageDiv
+{
+    width: 100%;
+    height: 100%;
+}
+
+.cards:hover
+{
+    transform: scale(1.035);
+}
+
+.pro_res_img
+{
+    width: 100%;
+}
+
+/* Contact Section */
+.contact_section
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact_left
+{
+    width: 100%;
+    padding: 1rem;
+}
+
+.contact_card
+{
+    text-align: center;
+    margin: 2.5rem;
+}
+
+.contact_form input, .contact_form textarea
+{
+    width: 70%;
+    font-size: 1.78rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: .5rem auto;
+    padding: .5rem;
+    text-align: center;
+}
+
+.contact_form input[type = "submit"] , .contact_form input[type = "reset"]
+{
+    cursor: pointer;
+}
+
+.form_btn_div
+{
+    margin: 2rem auto;
+    width: 50%;
+}
+
+.form_btns
+{
+    border: none;
+    background-color: var(--sky_blue);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.form_btns:hover
+{
+    background-color: var(--dark_blue);
+    transition: all 0.5s ease-in-out;
+}
+
+/* Footer Section */
+.footer_section
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    background-color: var(--dark_blue);
+    color: var(--white);
+}
+
+.footer_social_icons
+{
+    display: flex;
+    gap: 2rem;
+}
+
+.footer_social_icons i:hover
+{
+    color: var(--sky_blue);
+    cursor: pointer;
+}
